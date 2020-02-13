@@ -11,15 +11,109 @@ body {
   background-repeat: repeat-x;
 }
 
-#main {
+#box-container {
+  margin-top: 80px;
+  margin-left: 30px;
   display: flex;
-
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 #left-box {
-
+  margin-right: 30px;
 }
 
 #right-box {
+  max-width: 500px;
+  height: auto;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
 
+
+.top-right-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.inst-logo {
+  margin-right: 10px;
+}
+
+.login-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  color: white;
+  font-weight: 700;
+  border: 1px solid #06365f;
+  border-radius: 3px;
+  background: linear-gradient(180deg, #1c5380, #06365f, #1c5380);
+}
+
+.login-btn img {
+  padding-left: 10px;
+}
+
+.login-txt {
+  padding: 10px;
+}
+
+.bottom-right-box {
+  background-image: url(../images/frame.png); 
+  background-repeat: no-repeat;
+  padding: 40px;
+}
+
+h1 {
+  color: #1c5380;
+  font-size: 1.5em;
+  font-weight: 700;
+  line-height: 1.2em;
+  padding-bottom: 1em;
+}
+
+em {
+  font-weight: 700;
+}
+
+.intro {
+  padding-bottom: 1em;
+}
+
+footer {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  font-size: 0.9em;
+  font-weight: 700;
+  color: #1c5380;
+  text-transform: uppercase;
+
+}
+
+footer ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+footer li {
+  padding-left: 10px;
+}
+
+footer li.copyright {
+  padding-left: 10px;
+  color: #000;
+  text-transform: none;
+  font-weight: normal;
 }
